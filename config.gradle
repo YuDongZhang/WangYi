@@ -1,0 +1,37 @@
+//添加多个自定义属性 , 可以通过 ext 代码块
+ext {
+    username = "simon"
+
+    // 生产/开发环境（正式/测试）
+    isRelease = true
+
+    // 建立Map存储，对象名、key都可以自定义，groovy糖果语法，非常灵活
+    androidId = [
+            compileSdkVersion: 30,
+            buildToolsVersion: "30.0.2",
+            minSdkVersion    : 23,
+            targetSdkVersion : 30,
+            versionCode      : 1,
+            versionName      : "1.0",
+    ]
+
+    appId = [
+            applicationId: "com.netease"
+    ]
+
+    // 生产/开发环境URL
+    url = [
+            "debug"  : "https://11.22.33.44/debug",
+            "release": "https://11.22.33.44/release"
+    ]
+
+    supportLibrary = "1.2.0" // ${xxx}
+    recyclerview = "1.1.0" // ${xxx} //新版本不一致只能改写
+    // 第三方库
+    dependencies = [
+            "appcompat"   : "androidx.appcompat:appcompat:${supportLibrary}",
+            "recyclerview": "androidx.recyclerview:recyclerview:${recyclerview}",
+            "constraint"  : "androidx.constraintlayout:constraintlayout:2.0.4"
+    ]
+
+}

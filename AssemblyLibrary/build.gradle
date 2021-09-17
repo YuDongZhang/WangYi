@@ -1,4 +1,6 @@
 apply plugin: 'java-library'
+println "java-library hello gradle" //发现都打印了 , 这里可以发现进行了统一的管理
+
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
