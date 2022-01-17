@@ -75,7 +75,7 @@ android {
     signingConfigs {
         debug {
             // 天坑：填错了，编译不通过还找不到问题
-            storeFile file('C:/Users/Administrator/.android/debug.keystore')
+            storeFile file('C:/Users/86130/.android/debug.keystore')
             storePassword "android"
             keyAlias "androiddebugkey"
             keyPassword "android"
