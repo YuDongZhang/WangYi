@@ -2,8 +2,9 @@
 ext {
     username = "simon"
 
-    // 生产/开发环境（正式/测试）
-    isRelease = true
+    // 定义一个项目全局变量isRelease，用于动态切换：组件化模式 / 集成化模式
+    // false: 组件化模式（子模块可以独立运行），true ：集成化模式（打包整个项目apk，子模块不可独立运行）
+    isRelease = false
 
     // 建立Map存储，对象名、key都可以自定义，groovy糖果语法，非常灵活
     androidId = [
@@ -15,9 +16,9 @@ ext {
             versionName      : "1.0",
     ]
 
-    appId = [
-            applicationId: "com.netease"
-    ]
+    appId = ["app"     : "com.netease.modular",
+             "order"   : "com.netease.modular.order",
+             "personal": "com.netease.modular.personal"]
 
     // 生产/开发环境URL
     url = [
