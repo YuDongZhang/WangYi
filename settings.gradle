@@ -3,4 +3,6 @@ include ':personal'
 include ':order'
 include ':AssemblyLibrary'
 include ':app'
+include ':annotation'
+include ':compiler'
 rootProject.name = "WangYi"

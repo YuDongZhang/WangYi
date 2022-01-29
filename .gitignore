@@ -11,3 +11,5 @@
 /.idea/compiler.xml
 *.bat
 /gradle/wrapper
+/annotation/build
+/compiler/build
