@@ -5,4 +5,5 @@ include ':AssemblyLibrary'
 include ':app'
 include ':annotation'
 include ':compiler'
+include ':arouter_api'
 rootProject.name = "WangYi"
