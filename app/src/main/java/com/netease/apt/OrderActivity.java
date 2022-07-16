@@ -23,7 +23,7 @@ public class OrderActivity extends AppCompatActivity {
     }
 
     public void jump(View view) {
-        Intent intent = new Intent(this, PersonalActivity$$ARouter.findTargetClass("/app/PersonalActivity"));
-        startActivity(intent);
+       // Intent intent = new Intent(this, PersonalActivity$$ARouter.findTargetClass("/app/PersonalActivity"));
+      //  startActivity(intent);
     }
 }

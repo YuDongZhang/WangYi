@@ -32,8 +32,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void jump(View view) {
-        Intent intent = new Intent(this, OrderActivity$$ARouter.findTargetClass("/app/OrderActivity"));
-        startActivity(intent);
+        //Intent intent = new Intent(this, OrderActivity$$ARouter.findTargetClass("/app/OrderActivity"));
+       // startActivity(intent);
     }
 
     public void jumpOrder(View view) {

@@ -22,7 +22,7 @@ public class PersonalActivity extends AppCompatActivity {
     }
 
     public void jump(View view) {
-        Intent intent = new Intent(this, MainActivity$$ARouter.findTargetClass("/app/MainActivity"));
-        startActivity(intent);
+       // Intent intent = new Intent(this, MainActivity$$ARouter.findTargetClass("/app/MainActivity"));
+       // startActivity(intent);
     }
 }
